@@ -1,0 +1,22 @@
+{
+  "name": "socketio-react-clear-install",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/mmikeler/socketio-react-clear-install.git",
+  "author": "mmikeler <mmikeler@mail.ru>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "concurrently": "^6.0.0",
+    "nanoid": "^3.1.20",
+    "node-fetch": "^2.6.1"
+  },
+  "scripts": {
+    "server": "yarn --cwd server dev",
+    "client": "yarn --cwd client start",
+    "start": "concurrently \"yarn server\" \"yarn client\""
+  },
+  "devDependencies": {
+    "eslint-plugin-react-hooks": "^4.2.0"
+  }
+}
